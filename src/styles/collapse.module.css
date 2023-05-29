@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: #f7f7f7;
+
+  border-radius: 5px;
+}
+
+.titre {
+  font-size: 24px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.textDescription {
+  padding: 30px;
+}
+
+.container p {
+  color: #ff6060;
+  text-align: justify;
+}
