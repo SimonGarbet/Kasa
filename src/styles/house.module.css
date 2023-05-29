@@ -1,0 +1,74 @@
+.globalPage {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.split {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.locationGeneral {
+  color: #ff6060;
+}
+
+.locationGeneral h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.locationGeneralText {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.locationProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 17%;
+}
+
+.locationProfile div {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.locationHost {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: end;
+}
+
+.locationHost img {
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  height: 64px;
+  padding-left: 10px;
+}
+
+.locationProfile i {
+  font-size: 24px;
+  padding-top: 20px;
+  width: 18%;
+}
+
+.doubleCollapse {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+
+  margin-bottom: 40px;
+}
