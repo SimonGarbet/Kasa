@@ -53,3 +53,20 @@
   font-size: 70px;
   color: white;
 }
+
+@media all and (max-width: 750px) {
+  .generalCarrousel,
+  .prevButton,
+  .nextButton {
+    height: 255px;
+  }
+
+  .prevButton i,
+  .nextButton i {
+    font-size: 20px;
+  }
+
+  .generalCarrousel p {
+    display: none;
+  }
+}

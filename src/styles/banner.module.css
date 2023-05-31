@@ -1,33 +1,51 @@
 .container img {
   width: 100%;
+  margin: 0 auto;
   height: 223px;
-  margin: auto;
-  display: block;
-
   object-fit: cover;
   border-radius: 25px;
+
   filter: brightness(70%);
 
-  margin-bottom: 40px;
+  position: absolute;
 }
 
 .container h1 {
   color: white;
 
   width: 100%;
-  margin: auto;
-  display: block;
-  text-align: center;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 40%;
 
   font-size: 48px;
   font-weight: 500;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
+  text-align: center;
 }
 
 .container {
+  height: 223px;
+  margin-bottom: 40px;
+
   position: relative;
+}
+
+@media all and (max-width: 990px) {
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    height: 111px;
+  }
+
+  .container img {
+    height: 111px;
+  }
+  .container h1 {
+    top: 25%;
+    font-size: 24px;
+    text-align: start;
+    padding: 16px;
+  }
 }

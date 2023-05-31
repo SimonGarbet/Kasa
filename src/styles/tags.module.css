@@ -10,3 +10,9 @@
   padding: 7px 30px 7px 30px;
   font-size: 14px;
 }
+
+@media all and (max-width: 750px) {
+  .tagsDivision p {
+    font-size: 10px;
+  }
+}

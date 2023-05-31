@@ -38,7 +38,7 @@
   width: 17%;
 }
 
-.locationProfile div {
+.rating {
   width: 100%;
 
   display: flex;
@@ -51,6 +51,12 @@
   font-weight: 500;
   font-size: 18px;
   text-align: end;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .locationHost img {
@@ -60,8 +66,8 @@
 }
 
 .locationProfile i {
-  font-size: 24px;
-  padding-top: 20px;
+  font-size: 22px;
+  padding: 20px 1px 0px 1px;
   width: 18%;
 }
 
@@ -71,4 +77,62 @@
   gap: 75px;
 
   margin-bottom: 40px;
+}
+
+@media all and (max-width: 990px) {
+  .locationProfile i {
+    font-size: 18px;
+    padding-top: 20px;
+    width: 15%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .locationGeneral h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .locationGeneralText {
+    font-size: 14px;
+  }
+
+  .locationProfile {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 10px;
+  }
+
+  .locationProfile div {
+    width: 100%;
+  }
+
+  .locationHost h2 {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .locationProfile i {
+    font-size: 14px;
+    width: 9%;
+    padding: 0;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .doubleCollapse {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

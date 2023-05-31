@@ -24,3 +24,20 @@
 .container a {
   width: 27%;
 }
+
+@media all and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container a {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    background-color: white;
+    padding: 0px;
+  }
+}

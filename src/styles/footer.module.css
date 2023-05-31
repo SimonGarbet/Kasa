@@ -13,3 +13,9 @@
   color: white;
   font-size: 24px;
 }
+
+@media all and (max-width: 750px) {
+  .pied p {
+    font-size: 12px;
+  }
+}

@@ -26,3 +26,24 @@
 
   margin: 150px;
 }
+
+@media all and (max-width: 750px) {
+  .error {
+    gap: 30px;
+  }
+  .error h1 {
+    font-size: 96px;
+  }
+
+  .error p {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .error a {
+    font-size: 14px;
+    margin: 50px;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+}

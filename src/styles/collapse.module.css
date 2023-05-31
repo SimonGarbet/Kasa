@@ -28,3 +28,13 @@
   color: #ff6060;
   text-align: justify;
 }
+
+@media all and (max-width: 750px) {
+  .container h2 {
+    font-size: 13px;
+  }
+
+  .container p {
+    font-size: 12px;
+  }
+}
