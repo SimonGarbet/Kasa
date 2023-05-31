@@ -24,10 +24,6 @@ function House() {
         const houseTarget = await response.json()
 
         setHouseTarget(houseTarget.filter((profile) => profile.id === id))
-
-        if (houseTarget[0].id === undefined) {
-          setError(true)
-        }
       } catch (err) {
         setError(true)
       }
@@ -35,18 +31,12 @@ function House() {
     fetchHouse()
   }, [])
 
-  if (error) {
+  if (error === true || houseTarget[0]?.id !== id) {
+    console.log('Erreur')
     return <Error />
-  }
-
-  console.log(houseTarget)
-  console.log(houseTarget[0]?.rating)
-
-  return (
-    <section>
-      {houseTarget.length === 0 ? (
-        <p>Chargement des données</p>
-      ) : (
+  } else {
+    return (
+      <section>
         <div className={styles.globalPage}>
           <Carrousel pictures={houseTarget[0].pictures} />
 
@@ -67,7 +57,7 @@ function House() {
                   alt="Photographie de l'hôte"
                 ></img>
               </div>
-              <div>
+              <div className={styles.rating}>
                 <Rating rate={houseTarget[0].rating} />
               </div>
             </div>
@@ -78,9 +68,9 @@ function House() {
             <Collapse title={'Equipements'} text={houseTarget[0].equipments} />
           </div>
         </div>
-      )}
-    </section>
-  )
+      </section>
+    )
+  }
 }
 
 export default House

@@ -1,7 +1,5 @@
 import styles from '../../styles/banner.module.css'
 
-import { useEffect, UseState } from 'react'
-
 function Banner({ title, picture }) {
   return (
     <div className={styles.container}>
