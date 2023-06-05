@@ -8,7 +8,7 @@ import Collapse from '../../components/Collapse'
 function Apropos() {
   return (
     <section className={styles.global}>
-      <Banner title={''} picture={BannerPicture} />
+      <Banner picture={BannerPicture} />
       <div className={styles.container}>
         <Collapse
           key={1}
