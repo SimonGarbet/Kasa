@@ -12,10 +12,24 @@
 .pied p {
   color: white;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.vectorimage {
+  fill: white;
+  height: 18px;
+  width: 18px;
 }
 
 @media all and (max-width: 750px) {
   .pied p {
     font-size: 12px;
+  }
+
+  .vectorimage {
+    height: 10px;
+    width: 10px;
   }
 }

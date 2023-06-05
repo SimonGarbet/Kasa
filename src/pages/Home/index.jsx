@@ -37,10 +37,13 @@ function Home() {
 
   return (
     <section className={styles.homePage}>
-      <Banner
-        title={'Chez vous, partout et ailleurs'}
-        picture={BannerPicture}
-      />
+      <div className={styles.banner}>
+        {' '}
+        <Banner
+          title={'Chez vous, partout et ailleurs'}
+          picture={BannerPicture}
+        />
+      </div>
       {isDataLoading ? (
         <span>Chargement des données</span>
       ) : (

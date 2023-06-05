@@ -1,9 +1,9 @@
 import BannerPicture from '../../assets/montagnepaysage.jpg'
 
+import styles from '../../styles/apropos.module.css'
+
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
-
-import styles from '../../styles/apropos.module.css'
 
 function Apropos() {
   return (

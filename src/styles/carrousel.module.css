@@ -48,10 +48,10 @@
   border: none;
 }
 
-.prevButton i,
-.nextButton i {
-  font-size: 70px;
-  color: white;
+.prevButton svg,
+.nextButton svg {
+  fill: white;
+  font-size: 50px;
 }
 
 @media all and (max-width: 750px) {
@@ -61,8 +61,8 @@
     height: 255px;
   }
 
-  .prevButton i,
-  .nextButton i {
+  .prevButton svg,
+  .nextButton svg {
     font-size: 20px;
   }
 

@@ -44,6 +44,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 25px;
+}
+
+.rating svg {
+  padding-left: 2px;
 }
 
 .locationHost {
@@ -65,26 +70,12 @@
   padding-left: 10px;
 }
 
-.locationProfile i {
-  font-size: 22px;
-  padding: 20px 1px 0px 1px;
-  width: 18%;
-}
-
 .doubleCollapse {
   display: flex;
   align-items: flex-start;
   gap: 75px;
 
   margin-bottom: 40px;
-}
-
-@media all and (max-width: 990px) {
-  .locationProfile i {
-    font-size: 18px;
-    padding-top: 20px;
-    width: 15%;
-  }
 }
 
 @media all and (max-width: 750px) {
@@ -108,7 +99,7 @@
 
     width: 100%;
 
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .locationProfile div {
@@ -120,15 +111,15 @@
     text-align: start;
   }
 
-  .locationProfile i {
-    font-size: 14px;
-    width: 9%;
-    padding: 0;
-  }
-
   .rating {
+    margin-top: 0;
     display: flex;
     justify-content: flex-start;
+  }
+
+  .rating svg {
+    height: 15px;
+    width: 15px;
   }
 
   .doubleCollapse {
