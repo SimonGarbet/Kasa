@@ -48,10 +48,11 @@
   border: none;
 }
 
-.prevButton svg,
-.nextButton svg {
+.prevButton img,
+.nextButton img {
   fill: white;
-  font-size: 50px;
+  height: 80px;
+  width: 50px;
 }
 
 @media all and (max-width: 750px) {
@@ -61,9 +62,10 @@
     height: 255px;
   }
 
-  .prevButton svg,
-  .nextButton svg {
-    font-size: 20px;
+  .prevButton img,
+  .nextButton img {
+    height: 35px;
+    width: 22px;
   }
 
   .generalCarrousel p {

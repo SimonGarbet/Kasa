@@ -17,8 +17,7 @@
   gap: 5px;
 }
 
-.vectorimage {
-  fill: white;
+.copyright {
   height: 18px;
   width: 18px;
 }
@@ -28,7 +27,7 @@
     font-size: 12px;
   }
 
-  .vectorimage {
+  .copyright {
     height: 10px;
     width: 10px;
   }

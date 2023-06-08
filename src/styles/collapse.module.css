@@ -21,6 +21,11 @@
   padding: 10px;
 }
 
+.titre img {
+  height: 15px;
+  padding-right: 10px;
+}
+
 .textDescription {
   padding: 30px;
 }
