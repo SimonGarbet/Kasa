@@ -11,42 +11,42 @@ function Collapse({ title, text }) {
   useEffect(() => {}, [isOpen])
 
   if (Array.isArray(text) === true) {
-    return isOpen ? (
+    return (
       <div className={styles.container}>
-        <div className={styles.titre} onClick={() => setIsOpen(false)}>
+        <div className={styles.titre} onClick={() => setIsOpen(!isOpen)}>
           <h2>{title}</h2>
-          <img src={chevronUp} alt="Logo chevron vers le haut" />
+          <img
+            src={chevronUp}
+            alt="Logo chevron"
+            style={{ transform: isOpen ? 'rotate(0turn)' : 'rotate(0.5turn)' }}
+          />
         </div>
-        <div className={styles.textDescription}>
+        <div
+          className={styles.textDescription}
+          style={{ display: isOpen ? 'block' : 'none' }}
+        >
           {text.map((index) => (
             <p key={index}>{index}</p>
           ))}
         </div>
       </div>
-    ) : (
-      <div className={styles.container}>
-        <div className={styles.titre} onClick={() => setIsOpen(true)}>
-          <h2>{title}</h2>
-          <img src={chevronDown} alt="Logo chevron vers le bas" />
-        </div>
-      </div>
     )
   } else {
-    return isOpen ? (
+    return (
       <div className={styles.container}>
-        <div className={styles.titre} onClick={() => setIsOpen(false)}>
+        <div className={styles.titre} onClick={() => setIsOpen(!isOpen)}>
           <h2>{title}</h2>
-          <img src={chevronUp} alt="Logo chevron vers le haut" />
+          <img
+            src={chevronUp}
+            alt="Logo chevron"
+            style={{ transform: isOpen ? 'rotate(0turn)' : 'rotate(0.5turn)' }}
+          />
         </div>
-        <div className={styles.textDescription}>
+        <div
+          className={styles.textDescription}
+          style={{ display: isOpen ? 'block' : 'none' }}
+        >
           <p>{text}</p>
-        </div>
-      </div>
-    ) : (
-      <div className={styles.container}>
-        <div className={styles.titre} onClick={() => setIsOpen(true)}>
-          <h2>{title}</h2>
-          <img src={chevronDown} alt="Logo chevron vers le bas" />
         </div>
       </div>
     )
