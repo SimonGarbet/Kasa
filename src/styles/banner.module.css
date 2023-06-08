@@ -1,5 +1,4 @@
-.fond,
-.fond2 {
+.fond {
   height: 223px;
   background-size: cover;
   background-position: center;
@@ -12,8 +11,7 @@
   margin-bottom: 40px;
 }
 
-.fond h1,
-.fond2 h1 {
+.fond h1 {
   font-size: 48px;
   color: white;
   margin: 30px;
@@ -22,20 +20,18 @@
 }
 
 @media all and (max-width: 990px) {
-  .fond h1,
-  .fond2 h1 {
+  .fond h1 {
     font-size: 38px;
   }
 }
 
 @media all and (max-width: 750px) {
-  .fond2 {
+  .fond {
     height: 111px;
     justify-content: flex-start;
   }
 
-  .fond h1,
-  .fond2 h1 {
+  .fond h1 {
     font-size: 24px;
   }
 }

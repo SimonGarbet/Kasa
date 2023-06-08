@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import styles from '../../styles/collapse.module.css'
 
 import chevronUp from '../../assets/chevron-up-solid.svg'
-import chevronDown from '../../assets/chevron-down-solid.svg'
 
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false)
