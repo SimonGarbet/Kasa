@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# P6Garbet : Kasa
+
+### Réalisé par [Simon Garbet](www.simongarbet.com)
+
+Dans le but d'un projet Openclassrooms
+
+## Pour lancer ce site :
+
+Lancez le **front** de ce site :
+
+- cd P6Garbet
+- npm start
+
+## Que fait ce site ?
+
+Kasa est une reproduction d'un site **type "Airbnb"** composée d'une page d'Accueil, d'un À propos, et d'une page Logement.
+Le but était de reproduire à l'identique la maquette à l'aide du **Framework React**.
+Sur ce site vous pouvez vous **déplacer** sur les différentes pages et profiter **d'éléments dynamiques** comme le carrousel sur la page Logement.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # P6Garbet
